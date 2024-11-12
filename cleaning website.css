@@ -1,0 +1,138 @@
+.cleaning-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+}
+body {
+    /* overflow: hidden; */
+    width: 100%;
+    height: 100%;
+}
+
+.page {
+    display: none;
+    /* padding: 0 0.5em; */
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    background-image: url('2.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.text-box {
+    width: 800px;
+    height: 450px;
+    position: absolute;
+    background-color: white;
+    padding: 30px;
+    max-width: 80%;
+    box-shadow: 0px 0px 8px 3px rgb(172, 171, 171);
+    z-index: 10;
+    top: 305px;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.subtitle {
+    color: gray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.description {
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.features {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.feature {
+    text-align: center;
+    flex: 1;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    fill: #8cbff5;
+}
+@media screen and (max-width: 576px) {
+    body {
+        overflow-x: hidden;
+        /* width: 75vh; */
+
+    }
+    .carousel-item img{
+        width: 100%;
+        height:400px;
+    }
+
+    .image-container {
+        display: none;
+    }
+
+    .text-box {
+        margin-top: 300px;
+        width: 100%;
+        height: 650px;
+        padding: 20px;
+        top: 60%;
+        left: 50%;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servies-section {
+        margin-top: 600px;
+    }
+
+    .worker {
+        margin-top: 300px;
+    }
+
+    .worker1 {
+        margin-top: 0px;
+    }
+
+    /* .worker-img {
+        width: 300px;
+        padding: 0px;
+    } */
+}
